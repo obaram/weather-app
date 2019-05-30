@@ -1,0 +1,24 @@
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+.wrapper{
+    animation: fadeIn ease 0.5s;
+    width:100%;
+}
+
+.wrapper td{
+    vertical-align:middle;
+}
+
+.icon{
+    margin-right:5px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
