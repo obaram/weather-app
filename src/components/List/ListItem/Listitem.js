@@ -25,7 +25,7 @@ const Listitem = ({index,item,unit,handleDelete}) => (
       
       
       
-     Delete</Button></td>
+     Usuń</Button></td>
  </tr>
 
 

@@ -13,8 +13,8 @@ const List = ({items,handleDelete,unit,error, success}) => (
     <thead>
         <tr>
         <th>#</th>
-        <th>City</th>
-        <th>Average temperature</th>
+        <th>Miasto</th>
+        <th>Średnia prognozowana tempretura</th>
         <th></th>
         </tr>
     </thead>

@@ -37,9 +37,9 @@ exports[`renders correctly 1`] = `
     >
       <span
         aria-hidden={true}
-        className="fa fa-remove"
+        className="fa fa-remove fa-1px icon"
       />
-      Delete
+      Usuń
     </button>
   </td>
 </tr>

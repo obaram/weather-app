@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem should render list item 1`] = `
+<div
+  className="wrapper"
+>
+  <Card
+    as="div"
+    body={false}
+    className="itemcard"
+  >
+    <CardHeader
+      as="h1"
+    >
+      Rzeszów
+    </CardHeader>
+    <CardBody>
+      <p>
+        Szerokość geograficzna: 
+        14.676
+      </p>
+      <p>
+        Długość geograficzna: 
+        16.643
+      </p>
+      <p>
+        Średnia prognozowana temperatura: 
+        15
+        °C
+      </p>
+      <div
+        className="btnWrapper"
+      >
+        <Button
+          active={false}
+          className="btn pull-right"
+          disabled={false}
+          type="submit"
+          variant="outline-primary"
+        >
+          <Link
+            to="/"
+          >
+            <FontAwesome
+              className="icon"
+              name="arrow-left"
+              size="1px"
+            />
+            Powrót
+          </Link>
+        </Button>
+      </div>
+    </CardBody>
+  </Card>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  className="wrapper"
+>
+  <div
+    className="itemcard card"
+  >
+    <h1
+      className="card-header"
+    >
+      Rzeszów
+    </h1>
+    <div
+      className="card-body"
+    >
+      <p>
+        Szerokość geograficzna: 
+        14.676
+      </p>
+      <p>
+        Długość geograficzna: 
+        16.643
+      </p>
+      <p>
+        Średnia prognozowana temperatura: 
+        15
+        °C
+      </p>
+      <div
+        className="btnWrapper"
+      >
+        <button
+          className="btn pull-right btn btn-outline-primary"
+          disabled={false}
+          type="submit"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <span
+              aria-hidden={true}
+              className="fa fa-arrow-left fa-1px icon"
+            />
+            Powrót
+          </a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

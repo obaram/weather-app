@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './Root';
+import { shallow } from 'enzyme';
+import "../../../setupTest"
+import renderer from 'react-test-renderer';
 
 const RootView = new Root();
 
@@ -16,6 +19,21 @@ const RootView = new Root();
        main: {temp:3}  
       }
    ]
+
+   it('renders correctly', () => {
+    const tree = renderer.create(<Root />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  describe('ListItem', () => {
+    it('should render list item',()=>{
+    
+    const wrapper = shallow(<Root/>);
+    expect(wrapper).toMatchSnapshot();
+
+    })
+
+})
 
 
   it('should return 2.00 for array elements', () => {

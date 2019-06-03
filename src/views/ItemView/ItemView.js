@@ -10,7 +10,6 @@ class ItemView extends React.Component {
 render(){
     
 
-    console.log(this.props.location.query);
 
     return(
         
@@ -26,9 +25,9 @@ render(){
                 </Card.Header>
             
                 <Card.Body>
-                <p>Lattitude: {this.props.location.query.item.lat}</p>
-                <p>Longtitude: {this.props.location.query.item.lon}</p>
-                <p>Average temperature: {this.props.location.query.item.temp}°C</p>
+                <p>Szerokość geograficzna: {this.props.location.query.item.lat}</p>
+                <p>Długość geograficzna: {this.props.location.query.item.lon}</p>
+                <p>Średnia prognozowana temperatura: {this.props.location.query.item.temp}°C</p>
                 <div className={styles.btnWrapper}>
                     <Button variant="outline-primary" type="submit" className="btn pull-right" ><Link to="/">
                     <FontAwesome
@@ -38,7 +37,7 @@ render(){
                         className={styles.icon}
                         />    
                         
-                        Back</Link></Button>
+                        Powrót</Link></Button>
                 </div>
                 </Card.Body>
             

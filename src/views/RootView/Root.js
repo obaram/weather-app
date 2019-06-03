@@ -103,10 +103,11 @@ fetchData = (city) => {
     axios.get('https://api.openweathermap.org/data/2.5/forecast?q='+city+units_string+'&pl&mode=json&APPID=89df1cb971afca2cd1af3ae609d46acc&lang=pl')
     .then( (response) => {
 
-        my_success.msg="The city has been successfully added"
+        my_success.msg="Miasto zostało pomyślnie dodane"
         my_success.show = true;
         my_error.show = false;
-      
+
+
         const item = {
             city,
             temp: this.avg(response.data.list),
@@ -118,16 +119,36 @@ fetchData = (city) => {
             townList:[...this.state.townList , item],
             success: my_success,
             error:my_error
-        })
+        })  
+        
+        this.count(2500,false,false);
 
     }).catch( (error) => {
 
-      my_error.msg = "City not found";
+      my_error.msg = "Nie znaleziono takiego miasta";
       my_error.show = true;
       my_success.show = false;
       this.setState({error:my_error,success:my_success});
 
+      this.count(2500,false,false);
+
     }) 
+}
+
+count = (counter,my_success_show,my_error_show) =>{
+
+let my_error = {...this.state.error};
+let my_success = {...this.state.success};
+
+    setTimeout(()=>{ 
+        my_success.show = my_success_show
+        my_error.show = my_error_show
+        this.setState({
+            success: my_success,
+            error:my_error
+        })
+
+    }, counter);
 }
 
 handleButtonClick = (e) =>{ 
@@ -148,6 +169,8 @@ handleButtonClick = (e) =>{
 
     }
     else this.fetchData(city);
+
+
 
 }
 
@@ -172,6 +195,7 @@ handleDelete = (e,index) =>{
 
 
 componentWillMount = () =>{
+    this.setState({unit:'metric'});
      localStorage.getItem('items') && this.setState({
          townList: JSON.parse(localStorage.getItem('items')),
          unit: JSON.parse(localStorage.getItem('unit')),
@@ -225,7 +249,7 @@ render() {
                         />  
                         Weather App
                     </h1><hr/>
-                    <p>A simple weather forecast for <b>next 5 days</b></p>
+                    <p>Prognoza pogody na <b>nastepne 5 dni</b></p>
                   </div>
                   <Route exact path="/"component={AddForm}/> 
                   <Route path="/settings" component={SettingsView}/>            

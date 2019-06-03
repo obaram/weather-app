@@ -9,12 +9,12 @@ const SettingsBar = (props) => (
     <div className={styles.wrapper}>
         <Button variant="outline-primary"><Link to="/settings">
         <FontAwesome
-                        className={styles.icon}
-                        name='gears'
-                        size='1px'
-                        className={styles.icon}
-                        />                
-            Settings</Link></Button>
+                className={styles.icon}
+                name='gears'
+                size='1px'
+                className={styles.icon}
+        />                
+        Ustawienia</Link></Button>
     </div>
 
 )

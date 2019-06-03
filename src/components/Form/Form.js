@@ -11,8 +11,8 @@ const AddForm = () => (
 
     <Form className={styles.wrapper} onSubmit={(e) => context.handleBtnClick(e)}>
       <FormGroup controlId="addCityForm" className={styles.items} >
-        <FormControl type="text" placeholder="City name" autoComplete="off" className={styles.text} onChange={(e) => context.handleInputChange(e)}/>
-        <Button variant="primary" type="submit" className="btn" >Add</Button>
+        <FormControl type="text" placeholder="Podaj miasto" autoComplete="off" className={styles.text} onChange={(e) => context.handleInputChange(e)}/>
+        <Button variant="primary" type="submit" className="btn" >Dodaj</Button>
       </FormGroup>
     </Form>
    

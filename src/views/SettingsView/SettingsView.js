@@ -12,9 +12,9 @@ const SettingsView =  (props) =>
     { (context) => (
     <div className={styles.wrapper}>
         <Card className={styles.settingsCard}>
-        <Card.Header as="h2">Settings</Card.Header>
+        <Card.Header as="h2">Ustawienia</Card.Header>
         <Card.Body>
-            <p>Unit:</p>
+            <p>Jednostka:</p>
             <InputGroup>
             <label>
                 <input type="radio" name="unit" value="metric" checked={context.unit === "metric"} onChange={(e) => {
