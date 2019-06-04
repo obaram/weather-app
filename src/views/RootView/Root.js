@@ -161,7 +161,7 @@ handleButtonClick = (e) =>{
 
     if ( this.townCheck(this.state.townList,e)) {
         
-        my_error.msg = "The city already exists";
+        my_error.msg = "Podane miasto już istnieje";
         my_error.show = true;
         my_success.show = false;
 
@@ -169,9 +169,6 @@ handleButtonClick = (e) =>{
 
     }
     else this.fetchData(city);
-
-
-
 }
 
 
@@ -211,7 +208,7 @@ componentWillUpdate = (nextProps,nextState) => {
   
 
 handleUnitChange = (e) =>{
-    console.log("Unit change "+e.target.value);
+
     this.setState({unit:e.target.value})
     localStorage.setItem('unit',JSON.stringify(e.target.value));
 }

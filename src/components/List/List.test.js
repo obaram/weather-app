@@ -6,7 +6,6 @@ import renderer from 'react-test-renderer';
 import {BrowserRouter,Route, Switch} from 'react-router-dom'
 import "../../../setupTest"
 
-
 const props = {
     index: 1,
     items: [{
@@ -33,8 +32,8 @@ const props = {
   });
 
 
- describe('ListItem', () => {
-     it('should render list item',()=>{
+ describe('List', () => {
+     it('should render list',()=>{
      
      const wrapper = shallow(<List {...props} />);
      expect(wrapper).toMatchSnapshot();

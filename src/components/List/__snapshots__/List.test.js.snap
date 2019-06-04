@@ -1,5 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`List should render list 1`] = `
+<Fragment>
+  <Bootstrap(Table)
+    bordered={true}
+    className="wrapper"
+    hover={true}
+    striped={true}
+  >
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          Miasto
+        </th>
+        <th>
+          Średnia prognozowana tempretura
+        </th>
+        <th />
+      </tr>
+    </thead>
+    <tbody>
+      <Listitem
+        handleDelete={[MockFunction]}
+        index={0}
+        item={
+          Object {
+            "city": "Rzeszów",
+            "lat": 31.165,
+            "lon": 21.276,
+            "temp": 25,
+          }
+        }
+        key="0"
+        unit="metric"
+      />
+    </tbody>
+  </Bootstrap(Table)>
+</Fragment>
+`;
+
 exports[`ListItem should render list item 1`] = `
 <Fragment>
   <Bootstrap(Table)

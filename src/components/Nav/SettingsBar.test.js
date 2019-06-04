@@ -5,19 +5,18 @@ import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer'; 
 import {BrowserRouter,Route, Switch} from 'react-router-dom'
 import "../../../setupTest"
-import AddForm from "./Form";
+import SettingsBar from "./SettingsBar"
 
- 
 
   it('renders correctly', () => {
-    const tree = renderer.create(<AddForm />).toJSON();
+    const tree = renderer.create(<BrowserRouter><SettingsBar /></BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
 
- describe('Form.js', () => {
+ describe('SettingsBar.js', () => {
      it('should render list item',()=>{     
-        const wrapper = shallow(<AddForm/>);
+        const wrapper = shallow(<SettingsBar/>);
         expect(wrapper).toMatchSnapshot();
      })
 })
