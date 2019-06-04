@@ -35,7 +35,6 @@ describe('Main functions', () => {
       }
    ]
 
-
   it('should return 2.00', () => {
          expect(RootView.avg(elements)).toBe("2.00");
   });

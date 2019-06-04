@@ -7,14 +7,14 @@ import FontAwesome from 'react-fontawesome'
 const SettingsBar = (props) => (
 
     <div className={styles.wrapper}>
-        <Button variant="outline-primary"><Link to="/settings">
+        <Link to="/settings"><Button variant="outline-primary">
         <FontAwesome
                 className={styles.icon}
                 name='gears'
                 size='1px'
                 className={styles.icon}
         />                
-        Ustawienia</Link></Button>
+        Ustawienia</Button></Link>
     </div>
 
 )

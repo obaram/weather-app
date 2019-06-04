@@ -35,16 +35,21 @@ const SettingsView =  (props) =>
                 }}/>°F
             </label>
             </InputGroup>
+        
         <div className={styles.btnWrapper}>
-        <Button variant="outline-primary" type="submit" className="btn" ><Link to="/">
-        <FontAwesome
-                        className={styles.icon}
-                        name='arrow-left'
-                        size='1px'
-                        className={styles.icon}
-                        />                       
-            Powrót</Link></Button>
+        <Link to="/">
+            <Button variant="outline-primary" type="submit" className="btn" >
+            <FontAwesome
+                    className={styles.icon}
+                    name='arrow-left'
+                    size='1px'
+                    className={styles.icon}
+                    />                       
+            Powrót
+            </Button>
+        </Link>
         </div>
+        
         </Card.Body>
         </Card>
     </div>

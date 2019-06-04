@@ -246,7 +246,7 @@ render() {
                         />  
                         Weather App
                     </h1><hr/>
-                    <p>Prognoza pogody na <b>nastepne 5 dni</b></p>
+                    <p>Prognoza pogody na <b>następne 5 dni</b></p>
                   </div>
                   <Route exact path="/"component={AddForm}/> 
                   <Route path="/settings" component={SettingsView}/>            

@@ -29,7 +29,7 @@ render(){
                 <p>Długość geograficzna: {this.props.location.query.item.lon}</p>
                 <p>Średnia prognozowana temperatura: {this.props.location.query.item.temp}°C</p>
                 <div className={styles.btnWrapper}>
-                    <Button variant="outline-primary" type="submit" className="btn pull-right" ><Link to="/">
+                <Link to="/"><Button variant="outline-primary" type="submit" className="btn pull-right" >
                     <FontAwesome
                         className={styles.icon}
                         name='arrow-left'
@@ -37,7 +37,7 @@ render(){
                         className={styles.icon}
                         />    
                         
-                        Powrót</Link></Button>
+                        Powrót</Button></Link>
                 </div>
                 </Card.Body>
             
