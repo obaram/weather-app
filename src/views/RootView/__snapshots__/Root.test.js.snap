@@ -160,3 +160,164 @@ exports[`Main functions renders correctly 1`] = `
   </table>
 </div>
 `;
+
+exports[`root view renders correctly 1`] = `
+<div
+  className="App container"
+>
+  <div
+    className="wrapper"
+  >
+    <button
+      className="btn btn-outline-primary"
+      disabled={false}
+      type="button"
+    >
+      <a
+        href="/settings"
+        onClick={[Function]}
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-gears fa-1px icon"
+        />
+        Ustawienia
+      </a>
+    </button>
+  </div>
+  <div
+    className="title"
+  >
+    <h1>
+      <span
+        aria-hidden={true}
+        className="fa fa-cloud fa-1px icon"
+      />
+      Weather App
+    </h1>
+    <hr />
+    <p>
+      Prognoza pogody na 
+      <b>
+        nastepne 5 dni
+      </b>
+    </p>
+  </div>
+  <form
+    className="wrapper"
+    onSubmit={[Function]}
+  >
+    <div
+      className="items form-group"
+    >
+      <input
+        autoComplete="off"
+        className="text form-control"
+        id="addCityForm"
+        onChange={[Function]}
+        placeholder="Podaj miasto"
+        type="text"
+      />
+      <button
+        className="btn btn btn-primary"
+        disabled={false}
+        type="submit"
+      >
+        Dodaj
+      </button>
+    </div>
+  </form>
+  <table
+    className="table wrapper table-striped table-bordered table-hover"
+  >
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          Miasto
+        </th>
+        <th>
+          Średnia prognozowana tempretura
+        </th>
+        <th />
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
+
+exports[`root view should render root view 1`] = `
+<BrowserRouter>
+  <ContextProvider
+    value={
+      Object {
+        "convertUnit": [Function],
+        "error": Object {
+          "msg": "",
+          "show": false,
+        },
+        "handleBtnClick": [Function],
+        "handleDelete": [Function],
+        "handleInputChange": [Function],
+        "handleUnitChange": [Function],
+        "hendleHide": [Function],
+        "success": Object {
+          "msg": "",
+          "show": false,
+        },
+        "townList": Array [],
+        "unit": "metric",
+      }
+    }
+  >
+    <div
+      className="App container"
+    >
+      <Route
+        component={[Function]}
+        path="/"
+      />
+      <div
+        className="title"
+      >
+        <h1>
+          <FontAwesome
+            className="icon"
+            name="cloud"
+            size="1px"
+          />
+          Weather App
+        </h1>
+        <hr />
+        <p>
+          Prognoza pogody na 
+          <b>
+            nastepne 5 dni
+          </b>
+        </p>
+      </div>
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+      <Route
+        component={[Function]}
+        path="/settings"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+      <Route
+        component={[Function]}
+        path="/itemview"
+      />
+    </div>
+  </ContextProvider>
+</BrowserRouter>
+`;

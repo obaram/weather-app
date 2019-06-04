@@ -15,7 +15,7 @@ import SettingsBar from "./SettingsBar"
 
 
  describe('SettingsBar.js', () => {
-     it('should render list item',()=>{     
+     it('should render settings bar',()=>{     
         const wrapper = shallow(<SettingsBar/>);
         expect(wrapper).toMatchSnapshot();
      })

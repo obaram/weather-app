@@ -28,8 +28,8 @@ const props = {
   });
 
 
- describe('ListItem', () => {
-     it('should render list item',()=>{
+ describe('item view', () => {
+     it('should render item view',()=>{
      
      const wrapper = shallow(<ItemView {...props} />);
      expect(wrapper).toMatchSnapshot();

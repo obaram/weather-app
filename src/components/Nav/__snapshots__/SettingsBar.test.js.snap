@@ -24,6 +24,30 @@ exports[`SettingsBar.js should render list item 1`] = `
 </div>
 `;
 
+exports[`SettingsBar.js should render settings bar 1`] = `
+<div
+  className="wrapper"
+>
+  <Button
+    active={false}
+    disabled={false}
+    type="button"
+    variant="outline-primary"
+  >
+    <Link
+      to="/settings"
+    >
+      <FontAwesome
+        className="icon"
+        name="gears"
+        size="1px"
+      />
+      Ustawienia
+    </Link>
+  </Button>
+</div>
+`;
+
 exports[`renders correctly 1`] = `
 <div
   className="wrapper"

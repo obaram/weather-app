@@ -55,6 +55,61 @@ exports[`ListItem should render list item 1`] = `
 </div>
 `;
 
+exports[`item view should render item view 1`] = `
+<div
+  className="wrapper"
+>
+  <Card
+    as="div"
+    body={false}
+    className="itemcard"
+  >
+    <CardHeader
+      as="h1"
+    >
+      Rzeszów
+    </CardHeader>
+    <CardBody>
+      <p>
+        Szerokość geograficzna: 
+        14.676
+      </p>
+      <p>
+        Długość geograficzna: 
+        16.643
+      </p>
+      <p>
+        Średnia prognozowana temperatura: 
+        15
+        °C
+      </p>
+      <div
+        className="btnWrapper"
+      >
+        <Button
+          active={false}
+          className="btn pull-right"
+          disabled={false}
+          type="submit"
+          variant="outline-primary"
+        >
+          <Link
+            to="/"
+          >
+            <FontAwesome
+              className="icon"
+              name="arrow-left"
+              size="1px"
+            />
+            Powrót
+          </Link>
+        </Button>
+      </div>
+    </CardBody>
+  </Card>
+</div>
+`;
+
 exports[`renders correctly 1`] = `
 <div
   className="wrapper"
